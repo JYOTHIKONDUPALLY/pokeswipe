@@ -2,7 +2,7 @@
 
 This project is a web application that allows users to browse and interact with Pokémon cards. Users can swipe through Pokémon cards, like or dislike them, and create a team of their favorite Pokémon.
 
-deployemnt link :https://pokeswipe-pi.vercel.app/
+deployment link :https://pokeswipe-pi.vercel.app/
 ## Features
 
 - Browse Pokémon cards: Users can swipe through Pokémon cards fetched from the Pokémon API.
