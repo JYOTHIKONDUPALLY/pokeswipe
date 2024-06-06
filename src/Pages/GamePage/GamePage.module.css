@@ -1,0 +1,140 @@
+.TinderContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../../images/57bbb8f343f67ed95d117896_pokemon-go-logo.jpg");
+  background-position: center;
+}
+
+.TinderStatus {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.TinderStatus > i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.TinderStatus > i.love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+  color: #fface4;
+}
+
+.TinderStatus > i.nope .fa-remove {
+  opacity: 0.7;
+  transform: scale(1);
+  color: #cdd6dd;
+}
+
+.TinderCards {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TinderCard {
+  position: absolute;
+  width: 90vw;
+  max-width: 400px;
+  height: 70vh;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.LikeDislikeIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.LikeIcon,
+.DislikeIcon {
+  font-size: 68px;
+  color: palevioletred;
+}
+.DislikeIcon {
+  color: red;
+}
+.TinderCard.moving {
+  transition: none;
+}
+
+.TinderCard.removed {
+  display: none;
+}
+
+.TinderCard > img {
+  max-width: 200px;
+  width: 100%;
+  max-height: 200px;
+  pointer-events: none;
+}
+
+.TinderCard > h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.TinderCard > p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.TinderButtons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.TinderButtons > button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 40px;
+  height: 60px;
+  border: 0;
+  background: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.TinderButtons > button:focus {
+  outline: 0;
+}
+
+.TinderButtons > i {
+  font-size: 32px;
+  vertical-align: middle;
+}

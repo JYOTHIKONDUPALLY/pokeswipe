@@ -1,0 +1,95 @@
+/* LikePage.module.css */
+
+.LikePageContainer {
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/57bbb8f343f67ed95d117896_pokemon-go-logo.jpg");
+  background-position: center;
+}
+
+.LikePageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+.LikePageContainer > h1 {
+  color: white;
+  font-size: clamp(1rem, 10vh, 3rem);
+}
+.PageHeader {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.CreateTeamButton {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.HeaderButtons {
+  display: flex;
+  gap: 10px;
+}
+.LikedPokemonGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.LikedPokemonCard {
+  position: relative;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LikedPokemonCard img {
+  width: 100px;
+  height: auto;
+}
+
+.Checkbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.alert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.CenteredProgress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
